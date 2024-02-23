@@ -86,3 +86,6 @@ The Naming Contest Application is a JavaScript web application built using React
 
 ## Contributing
 Contributions are welcome! If you'd like to contribute to the project, please fork the repository, make your changes, and submit a pull request.
+
+
+### Thank you
