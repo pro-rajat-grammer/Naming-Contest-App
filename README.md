@@ -1,5 +1,7 @@
 ## MNR (MongoDB, Node.js, React.js)
 
+### This project is cloed by Rajat
+
 Video Course (recorded August 2022): **[samer.dev/mnr](https://samer.dev/mnr)**
 
 For an up-to-date development environment configuration guide: **[samer.dev/reactful-ts](https://samer.dev/reactful-ts)**
