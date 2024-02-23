@@ -1,23 +1,31 @@
-## MNR (MongoDB, Node.js, React.js)
+# Naming Contest Application
 
-### This project is cloed by Rajat
+## Description
+The Naming Contest Application is a JavaScript web application built using React. It is designed to help people find ideas for naming various things such as startups, books, websites, and more.
 
-Video Course (recorded August 2022): **[samer.dev/mnr](https://samer.dev/mnr)**
+## Features
+- Users can input keywords or descriptions related to their project.
+- Anyone can create the Naming Contest.
+- Users can see the already proposed names as well as they can suggest new names
 
-For an up-to-date development environment configuration guide: **[samer.dev/reactful-ts](https://samer.dev/reactful-ts)**
 
-For general help: **[jscomplete.com/help](https://jscomplete.com/help)**
+## Technologies Used
+- **MongoDB**: NoSQL database for storing and managing application data.
+- **Node.js**: JavaScript runtime environment for server-side development.
+- **Express.js**: Web application framework for Node.js, used for building APIs and handling HTTP requests.
+- **React**: Frontend JavaScript library for building user interfaces.
+- **React Router**: Library for routing in a React application.
+- **Styled Components**: Library for styling React components with CSS.
+- **Axios**: Promise-based HTTP client for making AJAX requests.
 
-### Reference Text
 
-#### package.json scripts
+## Setup Instructions
+1. Clone the repository: `git clone git@github.com:pro-rajat-grammer/Naming-Contest-App.git`
+2. Navigate to the project directory: `cd naming-contest-app`
+3. Install dependencies: `npm install` or `yarn install`
+4. Start the development server: `npm start` or `yarn start`
+5. Open your browser and visit `http://localhost:3000`
 
-```
-  "scripts": {
-    "dev:server": "tsnd src/server/server.ts",
-    "dev:bundler": "webpack -w --mode=development"
-  },
-```
 
 #### package.json dependencies
 
@@ -73,3 +81,8 @@ For general help: **[jscomplete.com/help](https://jscomplete.com/help)**
   ]
 }
 ```
+
+
+
+## Contributing
+Contributions are welcome! If you'd like to contribute to the project, please fork the repository, make your changes, and submit a pull request.
