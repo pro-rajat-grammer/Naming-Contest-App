@@ -1,4 +1,3 @@
-
 import express from "express";
 import cors from "cors"
 import { connectClient } from "./db"
@@ -17,28 +16,18 @@ router.get("/contests", async (req, res) => {
     res.send({ contests })
 })
 
-
 router.get("/contest/:contestId", async (req, res) => {
-
     console.log(req.params.contestId);
-
     const client = await connectClient();
     const contest = await client
         .collection("contests")
         .findOne({ id: req.params.contestId })
-    // .toArray()
-
-
     res.send({ contest })
 });
-
-
 
 router.post("/contest/:contestId", async (req, res) => {
     const client = await connectClient();
     const { newNameValue } = req.body;
-    // console.log(req.body);
-
     const doc = await client
         .collection("contests")
         .findOneAndUpdate(
@@ -58,16 +47,8 @@ router.post("/contest/:contestId", async (req, res) => {
 });
 
 
-
-
-
-
-
-
-
 router.post("/contests/", async (req, res) => {
     const { contestName, categoryName, description } = req.body;
-
     const client = await connectClient();
     const doc = await client.collection("contests").insertOne({
         id: contestName.toLowerCase().replace(/\s/g, "-"),
@@ -76,11 +57,9 @@ router.post("/contests/", async (req, res) => {
         description,
         names: [],
     });
-
     const contest = await client
         .collection("contests")
         .findOne({ _id: doc.insertedId });
-
     res.send({ contest });
 });
 
